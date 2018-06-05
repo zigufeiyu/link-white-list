@@ -4,7 +4,7 @@
 * 针对用户提供项目合法url白名单，校验url合法性
 * url合法则返回url，否则返回false
 
-```
+```javascript
     var ourLink = require("link-white-list");
 
     var whiteList = ["test1.com", "test2.com"];
