@@ -1,0 +1,19 @@
+{
+  "name": "link-white-list",
+  "version": "0.1.0",
+  "description": "Check whether URL is on the white list!",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "example": "node example/ourlink.js"
+  },
+  "keywords": [
+    "url",
+    "whitelist"
+  ],
+  "author": "maqing01",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.1.0"
+  }
+}
