@@ -11,6 +11,10 @@
     "url",
     "whitelist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:maqing01/link-white-list.git"
+  },
   "author": "maqing01",
   "license": "ISC",
   "devDependencies": {
