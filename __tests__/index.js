@@ -23,4 +23,9 @@ describe("is our link", () => {
         expect(ourLink("//test.com:8080", ["test.com", "test.com:8080"])).toBe("//test.com:8080");
         expect(ourLink("//test.com", ["test"])).toBe("//test.com");
     })
+    it("glob RegExp", () => {
+        expect(ourLink("//qiangui.58.com", ["*.58.com"])).toBe("//qiangui.58.com");
+        expect(ourLink("//58.com", ["*.58.com"])).toBe("//58.com");
+        expect(ourLink("//qian.gui.58.com", ["*.58.com"])).toBe("//qian.gui.58.com");
+    })
 })

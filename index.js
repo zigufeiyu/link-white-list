@@ -34,7 +34,10 @@
             if (typeof pattern !== 'string' || !pattern.trim()) {
                 continue;
             }
-            pattern = pattern.trim(); // 去除规则字符串前后空格
+            pattern = pattern.trim()
+                             .replace(/\./g, "\\.")
+                             .replace(/\*\\\./g, "(.+\\.)*");
+
             var isOurLink = new RegExp("^(https?:)?//" + pattern);
 
             // 校验url，符合某条白名单规则即返回当前url
