@@ -36,7 +36,7 @@
             }
             pattern = pattern.trim()
                              .replace(/\./g, "\\.")
-                             .replace(/\*\\\./g, "(.+\\.)*");
+                             .replace(/\*\\\./g, "(.+?\\.)*");
 
             var isOurLink = new RegExp("^(https?:)?//" + pattern);
 

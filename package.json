@@ -1,15 +1,17 @@
 {
   "name": "link-white-list",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Check whether URL is on the white list!",
   "main": "./dist/index.js",
   "scripts": {
+    "build": "uglifyjs index.js -m -o dist/index.js",
     "test": "jest",
     "example": "node example/ourlink.js"
   },
   "keywords": [
     "url",
-    "whitelist"
+    "whitelist",
+    "白名单"
   ],
   "repository": {
     "type": "git",
@@ -18,6 +20,7 @@
   "author": "maqing01",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^23.1.0"
+    "jest": "^23.1.0",
+    "uglify-js": "^3.4.7"
   }
 }
