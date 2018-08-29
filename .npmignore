@@ -1,4 +1,7 @@
-example
+src
+__tests__
+.vscode
 coverage
-index.js
 node_modules
+.travis.yml
+.gitignore

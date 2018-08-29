@@ -1,12 +1,12 @@
 {
   "name": "link-white-list",
-  "version": "0.2.2",
+  "version": "1.0.1",
   "description": "Check whether URL is on the white list!",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "uglifyjs index.js -m -o dist/index.js",
     "test": "jest",
-    "example": "node example/ourlink.js"
+    "typescript": "tsc",
+    "build": "uglifyjs src/index.js -m -o dist/index.js"
   },
   "keywords": [
     "url",
@@ -21,6 +21,7 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^23.1.0",
+    "typescript": "^3.0.1",
     "uglify-js": "^3.4.7"
   }
 }
